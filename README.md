@@ -1,4 +1,4 @@
-## Apache2 with php5 on Ubuntu 14.04 LTS
+## Apache2 on Ubuntu 14.04 LTS
 
 This is docker images of Ubuntu 14.04 LTS with apache2
 
