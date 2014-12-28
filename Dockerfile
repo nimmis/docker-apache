@@ -13,8 +13,6 @@ ADD run.sh /run.sh
 RUN chmod 0755 /run.sh
 
 EXPOSE 80
-VOLUME /var/www/html
-
 
 #set default command
 CMD ["/run.sh"]
