@@ -9,10 +9,7 @@ RUN apt-get update && \
 apt-get install -y apache2  && \
 rm -rf /var/lib/apt/lists/*
 
-ADD run.sh /run.sh
-RUN chmod 0755 /run.sh
+# add apache2 service to supervisor
+ADD supervisor/conf.d/apache2.conf /etc/supervisor/conf.d/
 
 EXPOSE 80
-
-#set default command
-CMD ["/run.sh"]
